@@ -105,7 +105,7 @@ class ParseUser extends ParseObject
                 'Cannot sign up an already existing user.'
             );
         }
-        parent::save();
+        parent::save(TRUE);
         $this->handleSaveResult(true);
     }
 
